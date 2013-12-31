@@ -1,0 +1,7 @@
+<h2> Total Inventories </h2>
+
+<% @inventories.each do |inv|%>
+  <div><%= link_to inv.title, inventory_path(inv) %></div>
+<%end%>
+
+<div><% link_to 'New Inventory!', new_inventory_path%></div>
